@@ -1,0 +1,109 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 20px;
+ }
+ body {
+     
+     background-image: url("https: //cdn.pixabay.com/photo/2022/06/08/05/47/stars-7249785_640.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+  header {
+      background-color:black ;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  header img {
+      width: 150px;
+      background-color: black;
+  }
+
+  .imagen-rick-y-morty {
+      width: 250px;
+  }
+  header ul {
+      list-style: none;
+      display: flex;
+      gap: 5px;
+      
+  }
+
+  header ul li {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+      margin-right: 20px;
+      background-color: teal;
+      border-radius: 10%;
+      padding: 10px;
+  }
+
+main{
+ margin: 20px;
+ padding: 20px  
+}
+
+.sinopsis {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+} 
+
+
+.personajes{
+flex-direction: row;}
+
+.ver-serie a img{
+flex-direction: row; 
+width: 100px;
+border-radius: 10%;
+align-items: center;
+}
+  
+   footer {
+       background-color: #c16f81ae;
+       width: 100%;
+       height: 190px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       -webkit-box-shadow: 2px -4px 16px 0px rgba(193, 111, 129, 0.81);
+       -moz-box-shadow: 2px -4px 14px 0px rgba(193, 111, 129, 0.81);
+       box-shadow: 2px -4px 14px 0px rgba(193, 111, 129, 0.81);
+   }
+
+   footer h3
+    {
+       font-size: 20px;
+       
+   }
+
+    .info-a-la-izquierda,
+    .info-a-la-derecha {
+       padding: 20px;
+       margin: 20px;
+   }
+
+   
+
+   .info-a-la-derecha a {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       gap: 25px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       background-color: teal;
+       border-radius: 10%;
+       padding: 10px;
+       margin: 5px;
+       align-items: center;
+       color: black;
+        text-decoration: none;
+    }
+
+   }
+   
