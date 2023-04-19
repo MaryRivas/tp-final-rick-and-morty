@@ -41,27 +41,89 @@
   }
 
 main{
- margin: 20px;
- padding: 20px  
+   background-color: #69ebcfd1;
+ width: 100%;
+ height: auto;
+-webkit-box-shadow: 2px -4px 16px 0px rgba(100, 203, 198, 0.81);
+ -moz-box-shadow: 2px -4px 14px 0px rgba(60, 244, 244, 0.81);
+ box-shadow: 2px -4px 14px 0px rgba(111, 185, 193, 0.81);
+ padding: 30px;
 }
 
 .sinopsis {
-
 display: flex;
-justify-content: space-between;
-align-items: center;
+flex-direction: row;
 gap: 20px;
 } 
+.sinopsis img {
+border-radius: 5%;
+}
+
+.personajes h2{
+flex-direction: row;
+background-color: #c0faef;
+background-size:contain ;
+border-radius: 20%;
+-webkit-box-shadow: 2px -4px 16px 0px rgba(29, 244, 133, 0.81);
+ -moz-box-shadow: 2px -4px 14px 0px rgba(59, 249, 164, 0.81);
+ box-shadow: 2px -4px 14px 0px rgba(25, 225, 102, 0.81);
+ padding: 15px;
+ margin: 15px;
+text-align: center;
+
+}
 
 
-.personajes{
-flex-direction: row;}
+
+ .container {
+            background-color: #c0faef;
+            border-radius: 3%;
+            -webkit-box-shadow: 2px -4px 16px 0px rgba(29, 244, 133, 0.81);
+            -moz-box-shadow: 2px -4px 14px 0px rgba(59, 249, 164, 0.81);
+            box-shadow: 2px -4px 14px 0px rgba(25, 225, 102, 0.81);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            padding:40px;
+            
+    
+}
+
+.grid-item {
+    background-color: tomato;
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+     border-radius: 10px;
+    margin: 10px;
+   
+}
+
+.grid-item img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+   
+.ver-serie {
+display: flex;
+justify-content: space-between;
+
+background-color: #c0faef;
+border-radius: 10%;
+-webkit-box-shadow: 2px -4px 16px 0px rgba(29, 244, 133, 0.81);
+ -moz-box-shadow: 2px -4px 14px 0px rgba(59, 249, 164, 0.81);
+ box-shadow: 2px -4px 14px 0px rgba(25, 225, 102, 0.81);
+ padding: 30px;
+ margin: 15px;
+}
 
 .ver-serie a img{
-flex-direction: row; 
-width: 100px;
+width: 300px;
 border-radius: 10%;
-align-items: center;
+margin-right: 50px;
 }
   
    footer {
@@ -105,5 +167,33 @@ align-items: center;
         text-decoration: none;
     }
 
-   }
+        /*Media querie | punto de quiebre*/
+
+@media(max-width: 480px) {
+
+    header {
+        
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+  
+    .container {
+    flex-direction: column;
+    }
+
+    .info-a-la-derecha {
+    flex-direction: column;
+    }
+    .info-a-la-izquierda {
+    flex-direction: column;
+    }
+}
+
+
+
+   
    
